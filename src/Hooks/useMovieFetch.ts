@@ -49,7 +49,7 @@ export const useMovieFetch = (movieId: number) => {
             return;
         }
         fetchMovie();
-    }, [movieId])
+    }, [fetchMovie, movieId]);
 
     // Write to session storage.
     useEffect( () => {
